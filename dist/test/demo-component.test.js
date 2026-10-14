@@ -20,7 +20,7 @@ describe("DemoComponent", () => {
     const form = element.querySelector("form");
     const axe = configureAxe({
       rules: {
-        // disable landmark rules when testing isolated components.
+        // disable landmark rules when testing isolated components
         region: { enabled: false },
       },
     });

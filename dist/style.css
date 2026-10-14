@@ -25,6 +25,7 @@ demo-component button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 demo-component button svg {
