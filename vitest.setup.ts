@@ -1,9 +1,11 @@
 // vitest.setup.ts
 import { expect } from "vitest";
-import * as matchers from "vitest-axe/matchers";
+import {
+  AXE_REPORT_PATH,
+  createAxeHtmlReporter,
+} from "./vitest-axe-html-reporter.js";
 
-// Extend vitest's expect with axe matchers
-expect.extend(matchers);
+expect.extend(createAxeHtmlReporter({ outputFile: AXE_REPORT_PATH }));
 
 // jsdom does not implement getComputedStyle for pseudo-elements (e.g. ::before).
 // Some accessibility utilities still call it with a second argument.
