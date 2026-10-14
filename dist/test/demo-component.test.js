@@ -17,7 +17,7 @@ describe("DemoComponent", () => {
   });
 
   it("should have no accessibility violations", async () => {
-    const form = element.shadowRoot.querySelector("form");
+    const form = element.querySelector("form");
     const axe = configureAxe({
       rules: {
         // disable landmark rules when testing isolated components.
