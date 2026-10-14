@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server dist",
+    "start": "live-server --port=9000 dist",
     "test": "vitest"
   },
   "keywords": [],
