@@ -35,6 +35,7 @@ To get started with the accessibility testing code, follow these steps:
 Each `toHaveNoViolations()` assertion also writes an axe report to
 `dist/axe-report.html`. The report includes a summary and details for every
 violation, including its affected element, selector, impact, and axe help link.
+The report uses a dark theme.
 The report is generated and opened automatically after the test run, even when
 violations cause a test to fail. To change the output path, update
 `AXE_REPORT_PATH` in `vitest-axe-html-reporter.js`.

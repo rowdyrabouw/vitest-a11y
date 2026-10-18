@@ -70,18 +70,18 @@ function renderReport(results) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accessibility report</title>
     <style>
-      :root { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; color: #202124; background: #f5f7fa; }
+      :root { color-scheme: dark; font: 16px/1.5 system-ui, sans-serif; color: #e6edf3; background: #0d1117; }
       body { max-width: 960px; margin: 0 auto; padding: 2rem; }
       h1, h2, h3 { line-height: 1.2; }
-      .status, .violation { padding: 1rem 1.25rem; border-radius: .5rem; background: white; }
-      .passed { border-left: .4rem solid #16803c; }
-      .failed { border-left: .4rem solid #b42318; }
-      .violation { margin: 1.25rem 0; border: 1px solid #d0d5dd; }
+      .status, .violation { padding: 1rem 1.25rem; border-radius: .5rem; background: #161b22; }
+      .passed { border-left: .4rem solid #3fb950; }
+      .failed { border-left: .4rem solid #f85149; }
+      .violation { margin: 1.25rem 0; border: 1px solid #30363d; }
       .node { margin: 1rem 0; }
       code, pre { overflow-wrap: anywhere; }
-      pre { padding: 1rem; overflow-x: auto; background: #f1f3f5; border-radius: .25rem; }
-      a { color: #175cd3; }
-      .empty { color: #475467; }
+      pre { padding: 1rem; overflow-x: auto; background: #0d1117; border-radius: .25rem; }
+      a { color: #79c0ff; }
+      .empty { color: #8b949e; }
     </style>
   </head>
   <body>
